@@ -37,7 +37,6 @@ namespace CoreAPIDemo.Controllers
         }
 
         [HttpPut]
-        [Route("student")]
         public  async Task<ActionResult> Update([FromBody] Student student)
         {
             if (student == null)
@@ -49,8 +48,7 @@ namespace CoreAPIDemo.Controllers
             return Ok("Value Updated");
         }
 
-        [HttpDelete()]
-        [Route("student/{id}")]
+        [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int? id)
         {
             if (id == null)
