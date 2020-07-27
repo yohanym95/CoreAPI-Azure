@@ -18,7 +18,7 @@ namespace CoreAPIDemo.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("CoreAPIDemo.Data.Student", b =>
+            modelBuilder.Entity("CoreAPIDemo.Models.Student", b =>
                 {
                     b.Property<int>("StudentId")
                         .ValueGeneratedOnAdd()

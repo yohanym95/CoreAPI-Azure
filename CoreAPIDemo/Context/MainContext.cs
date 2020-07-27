@@ -1,4 +1,4 @@
-﻿using CoreAPIDemo.Data;
+﻿using CoreAPIDemo.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
